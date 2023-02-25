@@ -7,6 +7,7 @@
 
 import Coordination
 
+//sourcery: AutoMockable
 /// Входные параметры основного flow приложения
 protocol MainFlowProviderInput {
     /// Показывает главный экран

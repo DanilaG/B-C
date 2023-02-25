@@ -12,16 +12,23 @@ post_install do |installer|
   end
 end
 
-target 'B&C' do
+target 'BAndC' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for B&C
+  # Pods for BAndC
   pod 'SwiftLint', '~> 0.49.1'
   pod 'Swinject', '2.8.2'
 
-  # Local pods for B&C
+  # Local pods for BAndC
   # Common
   pod 'Coordination', :path => 'Modules/Common/Coordination'
 
+  abstract_target 'Tests' do
+    target "BAndCTests"
+
+    pod 'Nimble', '11.2.1'
+    pod 'Quick', '6.1.0'
+    pod "SwiftyMocky", '4.1.0'
+  end
 end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79C5DB04AA798538A130A512 /* Pods_BAndC_Tests_BAndCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07AA6BBDFD1EC89DA7F7EAB /* Pods_BAndC_Tests_BAndCTests.framework */; };
+		83614F2F29AA2F55001218C7 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E71A29AA0946000BCF02 /* MainCoordinatorTests.swift */; };
+		83614F3029AA2F6E001218C7 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83614F2029AA17B7001218C7 /* Mocks.swift */; };
 		8394E6D029A7D848000BCF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6CF29A7D848000BCF02 /* AppDelegate.swift */; };
 		8394E6D229A7D848000BCF02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6D129A7D848000BCF02 /* SceneDelegate.swift */; };
 		8394E6D429A7D848000BCF02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6D329A7D848000BCF02 /* ViewController.swift */; };
@@ -16,13 +19,24 @@
 		8394E6F629A91806000BCF02 /* MainFlowModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6F529A91806000BCF02 /* MainFlowModule.swift */; };
 		8394E6F829A919C0000BCF02 /* MainFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6F729A919C0000BCF02 /* MainFlowAssembly.swift */; };
 		8394E6FA29A91D49000BCF02 /* MainFlowModuleInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6F929A91D49000BCF02 /* MainFlowModuleInputData.swift */; };
-		F6295821D05A7AF16654C3D2 /* Pods_B_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EE54001D486FB8FC7F12BE /* Pods_B_C.framework */; };
+		D033F36160B8B44D5F87246D /* Pods_BAndC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CF048735024EA709AF0126 /* Pods_BAndC.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		83614F2A29AA2F2A001218C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8394E6C429A7D847000BCF02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8394E6CB29A7D847000BCF02;
+			remoteInfo = BAndC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2AB94D91ADE4BD537987D2EE /* Pods-B&C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B&C.debug.xcconfig"; path = "Target Support Files/Pods-B&C/Pods-B&C.debug.xcconfig"; sourceTree = "<group>"; };
-		4BFF9F352BA469E63B19BCFB /* Pods-B&C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B&C.release.xcconfig"; path = "Target Support Files/Pods-B&C/Pods-B&C.release.xcconfig"; sourceTree = "<group>"; };
-		8394E6CC29A7D848000BCF02 /* B&C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "B&C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E702995E7B4DA4CA5898606 /* Pods-BAndC-Tests-BAndCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAndC-Tests-BAndCTests.debug.xcconfig"; path = "Target Support Files/Pods-BAndC-Tests-BAndCTests/Pods-BAndC-Tests-BAndCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83614F2029AA17B7001218C7 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		83614F2629AA2F2A001218C7 /* BAndCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAndCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8394E6CC29A7D848000BCF02 /* BAndC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAndC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8394E6CF29A7D848000BCF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8394E6D129A7D848000BCF02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8394E6D329A7D848000BCF02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,15 +47,28 @@
 		8394E6F529A91806000BCF02 /* MainFlowModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModule.swift; sourceTree = "<group>"; };
 		8394E6F729A919C0000BCF02 /* MainFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowAssembly.swift; sourceTree = "<group>"; };
 		8394E6F929A91D49000BCF02 /* MainFlowModuleInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleInputData.swift; sourceTree = "<group>"; };
-		94EE54001D486FB8FC7F12BE /* Pods_B_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_B_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8394E71A29AA0946000BCF02 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
+		A642E202C7AF865C65A4949D /* Pods-BAndC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAndC.debug.xcconfig"; path = "Target Support Files/Pods-BAndC/Pods-BAndC.debug.xcconfig"; sourceTree = "<group>"; };
+		B2CF048735024EA709AF0126 /* Pods_BAndC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAndC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA005239690FAE8C8EE658C9 /* Pods-BAndC-Tests-BAndCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAndC-Tests-BAndCTests.release.xcconfig"; path = "Target Support Files/Pods-BAndC-Tests-BAndCTests/Pods-BAndC-Tests-BAndCTests.release.xcconfig"; sourceTree = "<group>"; };
+		D07AA6BBDFD1EC89DA7F7EAB /* Pods_BAndC_Tests_BAndCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAndC_Tests_BAndCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6192F88DFDE3A34FE368986 /* Pods-BAndC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAndC.release.xcconfig"; path = "Target Support Files/Pods-BAndC/Pods-BAndC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		83614F2329AA2F2A001218C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C5DB04AA798538A130A512 /* Pods_BAndC_Tests_BAndCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8394E6C929A7D847000BCF02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6295821D05A7AF16654C3D2 /* Pods_B_C.framework in Frameworks */,
+				D033F36160B8B44D5F87246D /* Pods_BAndC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +78,8 @@
 		1CEF16E36545EC5342782638 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94EE54001D486FB8FC7F12BE /* Pods_B_C.framework */,
+				B2CF048735024EA709AF0126 /* Pods_BAndC.framework */,
+				D07AA6BBDFD1EC89DA7F7EAB /* Pods_BAndC_Tests_BAndCTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,16 +87,36 @@
 		58BA658FAE12D4FE57466E9F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2AB94D91ADE4BD537987D2EE /* Pods-B&C.debug.xcconfig */,
-				4BFF9F352BA469E63B19BCFB /* Pods-B&C.release.xcconfig */,
+				A642E202C7AF865C65A4949D /* Pods-BAndC.debug.xcconfig */,
+				F6192F88DFDE3A34FE368986 /* Pods-BAndC.release.xcconfig */,
+				4E702995E7B4DA4CA5898606 /* Pods-BAndC-Tests-BAndCTests.debug.xcconfig */,
+				BA005239690FAE8C8EE658C9 /* Pods-BAndC-Tests-BAndCTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		83614F1F29AA17B7001218C7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				83614F2029AA17B7001218C7 /* Mocks.swift */,
+			);
+			name = Generated;
+			path = BAndCTests/Generated;
+			sourceTree = SOURCE_ROOT;
+		};
+		83614F2729AA2F2A001218C7 /* BAndCTests */ = {
+			isa = PBXGroup;
+			children = (
+				8394E71C29AA09D4000BCF02 /* Flows */,
+			);
+			path = BAndCTests;
 			sourceTree = "<group>";
 		};
 		8394E6C329A7D847000BCF02 = {
 			isa = PBXGroup;
 			children = (
-				8394E6CE29A7D848000BCF02 /* B&C */,
+				8394E6CE29A7D848000BCF02 /* BAndC */,
+				83614F2729AA2F2A001218C7 /* BAndCTests */,
 				8394E6CD29A7D848000BCF02 /* Products */,
 				58BA658FAE12D4FE57466E9F /* Pods */,
 				1CEF16E36545EC5342782638 /* Frameworks */,
@@ -78,12 +126,13 @@
 		8394E6CD29A7D848000BCF02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8394E6CC29A7D848000BCF02 /* B&C.app */,
+				8394E6CC29A7D848000BCF02 /* BAndC.app */,
+				83614F2629AA2F2A001218C7 /* BAndCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8394E6CE29A7D848000BCF02 /* B&C */ = {
+		8394E6CE29A7D848000BCF02 /* BAndC */ = {
 			isa = PBXGroup;
 			children = (
 				8394E6EB29A90EFC000BCF02 /* Flows */,
@@ -93,7 +142,7 @@
 				8394E6D829A7D84F000BCF02 /* Assets.xcassets */,
 				8394E6DD29A7D84F000BCF02 /* Info.plist */,
 			);
-			path = "B&C";
+			path = BAndC;
 			sourceTree = "<group>";
 		};
 		8394E6EB29A90EFC000BCF02 /* Flows */ = {
@@ -124,12 +173,49 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		8394E71C29AA09D4000BCF02 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				83614F1F29AA17B7001218C7 /* Generated */,
+				8394E71D29AA09DB000BCF02 /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8394E71D29AA09DB000BCF02 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8394E71A29AA0946000BCF02 /* MainCoordinatorTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8394E6CB29A7D847000BCF02 /* B&C */ = {
+		83614F2529AA2F2A001218C7 /* BAndCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8394E6E029A7D850000BCF02 /* Build configuration list for PBXNativeTarget "B&C" */;
+			buildConfigurationList = 83614F2C29AA2F2B001218C7 /* Build configuration list for PBXNativeTarget "BAndCTests" */;
+			buildPhases = (
+				97C1FE274BDF7697D303813C /* [CP] Check Pods Manifest.lock */,
+				83614F2229AA2F2A001218C7 /* Sources */,
+				83614F2329AA2F2A001218C7 /* Frameworks */,
+				83614F2429AA2F2A001218C7 /* Resources */,
+				F6EF867A9A6414B680C7B862 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83614F2B29AA2F2A001218C7 /* PBXTargetDependency */,
+			);
+			name = BAndCTests;
+			productName = BAndCTests;
+			productReference = 83614F2629AA2F2A001218C7 /* BAndCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8394E6CB29A7D847000BCF02 /* BAndC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8394E6E029A7D850000BCF02 /* Build configuration list for PBXNativeTarget "BAndC" */;
 			buildPhases = (
 				7096F5FF7C209DDF426B20F7 /* [CP] Check Pods Manifest.lock */,
 				8394E6E329A7F30B000BCF02 /* SwiftLint */,
@@ -142,9 +228,9 @@
 			);
 			dependencies = (
 			);
-			name = "B&C";
+			name = BAndC;
 			productName = "B&C";
-			productReference = 8394E6CC29A7D848000BCF02 /* B&C.app */;
+			productReference = 8394E6CC29A7D848000BCF02 /* BAndC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,12 +243,16 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					83614F2529AA2F2A001218C7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 8394E6CB29A7D847000BCF02;
+					};
 					8394E6CB29A7D847000BCF02 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 8394E6C729A7D847000BCF02 /* Build configuration list for PBXProject "B&C" */;
+			buildConfigurationList = 8394E6C729A7D847000BCF02 /* Build configuration list for PBXProject "BAndC" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,12 +265,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8394E6CB29A7D847000BCF02 /* B&C */,
+				8394E6CB29A7D847000BCF02 /* BAndC */,
+				83614F2529AA2F2A001218C7 /* BAndCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		83614F2429AA2F2A001218C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8394E6CA29A7D847000BCF02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,7 +305,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-B&C-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BAndC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -233,26 +331,74 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		97C1FE274BDF7697D303813C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BAndC-Tests-BAndCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D7DAEE014784EA1F1F50AA51 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-B&C/Pods-B&C-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BAndC/Pods-BAndC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-B&C/Pods-B&C-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BAndC/Pods-BAndC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-B&C/Pods-B&C-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BAndC/Pods-BAndC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6EF867A9A6414B680C7B862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BAndC-Tests-BAndCTests/Pods-BAndC-Tests-BAndCTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BAndC-Tests-BAndCTests/Pods-BAndC-Tests-BAndCTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BAndC-Tests-BAndCTests/Pods-BAndC-Tests-BAndCTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		83614F2229AA2F2A001218C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83614F2F29AA2F55001218C7 /* MainCoordinatorTests.swift in Sources */,
+				83614F3029AA2F6E001218C7 /* Mocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8394E6C829A7D847000BCF02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,7 +416,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		83614F2B29AA2F2A001218C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8394E6CB29A7D847000BCF02 /* BAndC */;
+			targetProxy = 83614F2A29AA2F2A001218C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		83614F2D29AA2F2B001218C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E702995E7B4DA4CA5898606 /* Pods-BAndC-Tests-BAndCTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3TNZ35SGHD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DanilaG.BAndCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BAndC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BAndC";
+			};
+			name = Debug;
+		};
+		83614F2E29AA2F2B001218C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA005239690FAE8C8EE658C9 /* Pods-BAndC-Tests-BAndCTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3TNZ35SGHD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DanilaG.BAndCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BAndC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BAndC";
+			};
+			name = Release;
+		};
 		8394E6DE29A7D84F000BCF02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,7 +579,7 @@
 		};
 		8394E6E129A7D850000BCF02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB94D91ADE4BD537987D2EE /* Pods-B&C.debug.xcconfig */;
+			baseConfigurationReference = A642E202C7AF865C65A4949D /* Pods-BAndC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,7 +587,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3TNZ35SGHD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "B&C/Info.plist";
+				INFOPLIST_FILE = BAndC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "B&C";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -405,7 +598,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DanilaG.B-C";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BAndC;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,7 +607,7 @@
 		};
 		8394E6E229A7D850000BCF02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BFF9F352BA469E63B19BCFB /* Pods-B&C.release.xcconfig */;
+			baseConfigurationReference = F6192F88DFDE3A34FE368986 /* Pods-BAndC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,7 +615,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3TNZ35SGHD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "B&C/Info.plist";
+				INFOPLIST_FILE = BAndC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "B&C";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -432,7 +626,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DanilaG.B-C";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BAndC;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,7 +636,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8394E6C729A7D847000BCF02 /* Build configuration list for PBXProject "B&C" */ = {
+		83614F2C29AA2F2B001218C7 /* Build configuration list for PBXNativeTarget "BAndCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83614F2D29AA2F2B001218C7 /* Debug */,
+				83614F2E29AA2F2B001218C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8394E6C729A7D847000BCF02 /* Build configuration list for PBXProject "BAndC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8394E6DE29A7D84F000BCF02 /* Debug */,
@@ -451,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8394E6E029A7D850000BCF02 /* Build configuration list for PBXNativeTarget "B&C" */ = {
+		8394E6E029A7D850000BCF02 /* Build configuration list for PBXNativeTarget "BAndC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8394E6E129A7D850000BCF02 /* Debug */,

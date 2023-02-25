@@ -1,0 +1,13 @@
+sourceryCommand: null
+sourceryTemplate: null
+BAndCTests:
+  sources:
+    include:
+    - ./BAndC
+  output: ./BAndCTests/Generated/Mocks.swift
+  targets:
+  - BAndCTests
+  testable:
+  - BAndC
+  import:
+  - Coordination
