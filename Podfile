@@ -20,4 +20,8 @@ target 'B&C' do
   pod 'SwiftLint', '~> 0.49.1'
   pod 'Swinject', '2.8.2'
 
+  # Local pods for B&C
+  # Common
+  pod 'Coordination', :path => 'Modules/Common/Coordination'
+
 end

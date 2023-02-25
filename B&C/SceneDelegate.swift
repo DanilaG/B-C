@@ -6,10 +6,16 @@
 //
 
 import UIKit
+import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    let assembler = Assembler([
+        MainFlowModuleAssembly()
+    ])
+
     var window: UIWindow?
+    var mainFlow: MainFlowModule?
 
     func scene(
         _ scene: UIScene,
@@ -18,10 +24,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        let navigation = UINavigationController()
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = ViewController()
+        window.rootViewController = navigation
         window.makeKeyAndVisible()
         self.window = window
+        self.mainFlow = assembler.resolver.resolve(
+            MainFlowModule.self,
+            argument: MainFlowModuleInputData(navigation: navigation)
+        )
+        mainFlow?.coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

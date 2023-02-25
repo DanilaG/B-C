@@ -11,6 +11,11 @@
 		8394E6D229A7D848000BCF02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6D129A7D848000BCF02 /* SceneDelegate.swift */; };
 		8394E6D429A7D848000BCF02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6D329A7D848000BCF02 /* ViewController.swift */; };
 		8394E6D929A7D84F000BCF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8394E6D829A7D84F000BCF02 /* Assets.xcassets */; };
+		8394E6EE29A90FBB000BCF02 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6ED29A90FBB000BCF02 /* MainCoordinator.swift */; };
+		8394E6F029A9109F000BCF02 /* MainFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6EF29A9109F000BCF02 /* MainFlowProvider.swift */; };
+		8394E6F629A91806000BCF02 /* MainFlowModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6F529A91806000BCF02 /* MainFlowModule.swift */; };
+		8394E6F829A919C0000BCF02 /* MainFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6F729A919C0000BCF02 /* MainFlowAssembly.swift */; };
+		8394E6FA29A91D49000BCF02 /* MainFlowModuleInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394E6F929A91D49000BCF02 /* MainFlowModuleInputData.swift */; };
 		F6295821D05A7AF16654C3D2 /* Pods_B_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EE54001D486FB8FC7F12BE /* Pods_B_C.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,11 @@
 		8394E6D329A7D848000BCF02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8394E6D829A7D84F000BCF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8394E6DD29A7D84F000BCF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8394E6ED29A90FBB000BCF02 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		8394E6EF29A9109F000BCF02 /* MainFlowProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowProvider.swift; sourceTree = "<group>"; };
+		8394E6F529A91806000BCF02 /* MainFlowModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModule.swift; sourceTree = "<group>"; };
+		8394E6F729A919C0000BCF02 /* MainFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowAssembly.swift; sourceTree = "<group>"; };
+		8394E6F929A91D49000BCF02 /* MainFlowModuleInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowModuleInputData.swift; sourceTree = "<group>"; };
 		94EE54001D486FB8FC7F12BE /* Pods_B_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_B_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +86,7 @@
 		8394E6CE29A7D848000BCF02 /* B&C */ = {
 			isa = PBXGroup;
 			children = (
+				8394E6EB29A90EFC000BCF02 /* Flows */,
 				8394E6CF29A7D848000BCF02 /* AppDelegate.swift */,
 				8394E6D129A7D848000BCF02 /* SceneDelegate.swift */,
 				8394E6D329A7D848000BCF02 /* ViewController.swift */,
@@ -83,6 +94,34 @@
 				8394E6DD29A7D84F000BCF02 /* Info.plist */,
 			);
 			path = "B&C";
+			sourceTree = "<group>";
+		};
+		8394E6EB29A90EFC000BCF02 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				8394E6EC29A90F14000BCF02 /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8394E6EC29A90F14000BCF02 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8394E6F429A917E7000BCF02 /* Module */,
+				8394E6ED29A90FBB000BCF02 /* MainCoordinator.swift */,
+				8394E6EF29A9109F000BCF02 /* MainFlowProvider.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8394E6F429A917E7000BCF02 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				8394E6F529A91806000BCF02 /* MainFlowModule.swift */,
+				8394E6F729A919C0000BCF02 /* MainFlowAssembly.swift */,
+				8394E6F929A91D49000BCF02 /* MainFlowModuleInputData.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8394E6D429A7D848000BCF02 /* ViewController.swift in Sources */,
+				8394E6EE29A90FBB000BCF02 /* MainCoordinator.swift in Sources */,
+				8394E6F829A919C0000BCF02 /* MainFlowAssembly.swift in Sources */,
+				8394E6F629A91806000BCF02 /* MainFlowModule.swift in Sources */,
+				8394E6F029A9109F000BCF02 /* MainFlowProvider.swift in Sources */,
+				8394E6FA29A91D49000BCF02 /* MainFlowModuleInputData.swift in Sources */,
 				8394E6D029A7D848000BCF02 /* AppDelegate.swift in Sources */,
 				8394E6D229A7D848000BCF02 /* SceneDelegate.swift in Sources */,
 			);
