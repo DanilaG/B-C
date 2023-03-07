@@ -21,6 +21,8 @@ final class MainFlowModuleAssembly: Assembly {
             )
             let coordinator = MainCoordinator(provider: provider)
 
+            provider.output = coordinator
+
             return MainFlowModule(
                 coordinator: coordinator,
                 output: FlowModuleOutputEmpty()

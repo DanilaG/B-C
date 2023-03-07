@@ -1,0 +1,11 @@
+/* 
+  MainScreenLocalization.strings
+  MainScreen
+
+  Created by Danila on 05.03.2023.
+  
+*/
+
+"title" = "Bulls & Cows";
+"playButton" = "Start game";
+"rules" = "Rules";

@@ -34,9 +34,12 @@ jobs:
       - name: Install CocoaPod
         run: pod install
 
+      - name: Resources generation
+        run: ./Pods/SwiftGen/bin/swiftgen
+
       - name: Mocks generation
         run: ./Pods/SwiftyMocky/bin/swiftymocky generate
 
       - name: Run Tests
         run: bundle exec fastlane unit_test
-   
+

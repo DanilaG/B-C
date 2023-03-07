@@ -1,0 +1,9 @@
+strings:
+  inputs:
+    - ./Modules/Screens/Main/Resources/en.lproj/
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+        enumName: MainScreenStrings
+      output: ./Modules/Screens/Main/Generated/Strings.swift

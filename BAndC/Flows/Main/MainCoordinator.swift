@@ -21,3 +21,15 @@ final class MainCoordinator: Coordinator {
         provider.showMainScreen()
     }
 }
+
+// MARK: - MainFlowProviderOutput
+
+extension MainCoordinator: MainFlowProviderOutput {
+    func didSelectRules() {
+        provider.showRules()
+    }
+
+    func didSelectStartGame() {
+        provider.startGameFlow()
+    }
+}

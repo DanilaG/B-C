@@ -1,0 +1,9 @@
+strings:
+  inputs:
+    - MainScreenLocalization.strings
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+        enumName: MainScreenLocalization
+      output: Generated/Strings+Generated.swift

@@ -1,3 +1,7 @@
 excluded:
 - Pods
 - BAndCTests/Generated/
+- Modules/**/Tests/Generated/
+
+disabled_rules:
+- nesting

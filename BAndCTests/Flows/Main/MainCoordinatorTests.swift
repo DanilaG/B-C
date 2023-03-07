@@ -19,9 +19,25 @@ class MainCoordinatorTests: QuickSpec {
 
             context("when it start") {
                 coordinator.start()
-                
+
                 it("show main screen") {
                     provider.verify(.showMainScreen())
+                }
+            }
+
+            context("select start game") {
+                coordinator.didSelectStartGame()
+
+                it("start game flow") {
+                    provider.verify(.startGameFlow())
+                }
+            }
+
+            context("did select rules") {
+                coordinator.didSelectRules()
+
+                it("show rules") {
+                    provider.verify(.showRules())
                 }
             }
         }

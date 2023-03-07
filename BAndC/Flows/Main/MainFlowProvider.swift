@@ -6,17 +6,32 @@
 //
 
 import Coordination
+import MainScreen
 
-//sourcery: AutoMockable
+// sourcery: AutoMockable
 /// Входные параметры основного flow приложения
 protocol MainFlowProviderInput {
     /// Показывает главный экран
     func showMainScreen()
+    /// Показывает экран правил
+    func showRules()
+    /// Начинает flow игры
+    func startGameFlow()
+}
+
+// sourcery: AutoMockable
+/// Выходные параметры основного flow приложения
+protocol MainFlowProviderOutput: AnyObject {
+    /// Вызывается при запросе показа правил
+    func didSelectRules()
+    /// Вызывается при запросе начать игру
+    func didSelectStartGame()
 }
 
 /// Основное flow приложения
 final class MainFlowProvider: FlowDisplay {
 
+    weak var output: (MainFlowProviderOutput)?
     let navigation: UINavigationController
     let assembler: Assembler
 
@@ -25,16 +40,40 @@ final class MainFlowProvider: FlowDisplay {
     /// - Parameters:
     ///     - navigation: контроллер навигации
     ///     - assembler: сборщик
-    init(navigation: UINavigationController, assembler: Assembler) {
+    init(
+        navigation: UINavigationController,
+        assembler: Assembler
+    ) {
+        let assemblers = [
+            MainScreenAssembler()
+        ]
+
         self.navigation = navigation
-        self.assembler = assembler
+        self.assembler = Assembler(assemblers, parent: assembler)
     }
 }
 
 extension MainFlowProvider: MainFlowProviderInput {
 
     func showMainScreen() {
-        #warning("TODO: запуск координатора игры")
-        navigation.pushViewController(UIViewController(), animated: false)
+        guard let module = assembler.resolver.resolve(MainScreenModule.self) else { return }
+
+        module.output.showRules = { [weak output] in
+            output?.didSelectRules()
+        }
+
+        module.output.startGame = { [weak output] in
+            output?.didSelectStartGame()
+        }
+
+        navigation.pushViewController(module.viewController, animated: false)
+    }
+
+    func showRules() {
+        #warning("TODO")
+    }
+
+    func startGameFlow() {
+        #warning("TODO")
     }
 }
