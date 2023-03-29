@@ -14,8 +14,10 @@ xcuserdata/
 xcuserdata/**/*
 *.moved-aside
 Pods/
-BAndCTests/Generated/*
-Modules/**/Tests/**/Generated/*
+**/Generated/*
 
 Fastlane/report.xml
 Fastlane/test_output/
+
+*.xcodeproj
+*.xcworkspace

@@ -12,13 +12,3 @@ BAndCTests:
   - BAndC
   import:
   - Coordination
-
-MainScreenTests:
-  sources:
-    include:
-    - ./Modules/Screens/Main/
-  output: ./Modules/Screens/Main/Tests/Generated/Mocks.swift
-  targets:
-  - MainScreenTests
-  testable:
-  - MainScreen

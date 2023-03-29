@@ -3,10 +3,29 @@
 # B&C
 B&C (Bulls and Cows) is a logical game where you should guess the number.
 
-## Run tests:
+## First run
 
-1. Generate mocks by [SwiftyMocky](https://github.com/MakeAWishFoundation/SwiftyMocky). In the project directory run:
+1. Install SwiftGen
 ```
-./Pods/SwiftyMocky/bin/swiftymocky generate
+brew install swiftgen
 ```
-2. Choose the `BAndCTests` target.
+
+2. Install XcodeGen
+```
+brew install xcodegen
+```
+
+3. Install SwiftyMocky
+```
+brew install mint
+git clone https://github.com/MakeAWishFoundation/SwiftyMocky
+cd SwiftyMocky
+make install
+cd .. && rm -rf SwiftyMocky
+```
+
+4. Project generation
+For the project generation run the following commond:
+```
+./Scripts/generate.sh ./Modules ./Scripts
+```

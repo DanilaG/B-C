@@ -18,7 +18,6 @@ target 'BAndC' do
 
   # Pods for BAndC
   pod 'SnapKit', '5.6.0'
-  pod 'SwiftGen', '6.6.2'
   pod 'SwiftLint', '~> 0.49.1'
   pod 'Swinject', '2.8.2'
 
