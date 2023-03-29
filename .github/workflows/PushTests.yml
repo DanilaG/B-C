@@ -31,14 +31,24 @@ jobs:
       - name: Install gems
         run: bundle install
 
-      - name: Install CocoaPod
-        run: pod install
+      - name: Install XcodeGen
+        run:
+        - mkdir temp && cd temp
+        - curl -LO https://github.com/yonaskolb/XcodeGen/releases/download/2.34.0/xcodegen.zip
+        - unzip xcodegen.zip
+        - xcodegen/install.sh
+        - cd .. && rm -rf temp
 
-      - name: Resources generation
-        run: ./Pods/SwiftGen/bin/swiftgen
+      - name: Install XcodeGen
+        run:
+        - mkdir temp && cd temp
+        - git clone https://github.com/MakeAWishFoundation/SwiftyMocky
+        - cd ./SwiftyMocky
+        - make install
+        - cd ../../ && rm -rf temp
 
-      - name: Mocks generation
-        run: ./Pods/SwiftyMocky/bin/swiftymocky generate
+      - name: Project generation
+        run: ./Scripts/generate.sh ./Modules ./Scripts
 
       - name: Run Tests
         run: bundle exec fastlane unit_test

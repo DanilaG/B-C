@@ -1,0 +1,12 @@
+sourceryCommand: null
+sourceryTemplate: null
+
+MainScreenMocks:
+  sources:
+    include:
+    - ./
+  output: ./Tests/Generated/Mocks.swift
+  targets:
+  - MainScreenTests
+  testable:
+  - MainScreen

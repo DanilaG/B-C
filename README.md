@@ -3,10 +3,9 @@
 # B&C
 B&C (Bulls and Cows) is a logical game where you should guess the number.
 
-## Run tests:
+## Generate project
 
-1. Generate mocks by [SwiftyMocky](https://github.com/MakeAWishFoundation/SwiftyMocky). In the project directory run:
+For project generation run the following commond:
 ```
-./Pods/SwiftyMocky/bin/swiftymocky generate
+./Scripts/generate.sh ./Modules ./Scripts
 ```
-2. Choose the `BAndCTests` target.

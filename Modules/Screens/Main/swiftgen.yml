@@ -1,9 +1,9 @@
 strings:
   inputs:
-    - MainScreenLocalization.strings
+    - ./Resources/en.lproj/
   outputs:
     - templateName: structured-swift5
       params:
         publicAccess: true
-        enumName: MainScreenLocalization
-      output: Generated/Strings+Generated.swift
+        enumName: MainScreenStrings
+      output: ./Generated/Strings.swift
