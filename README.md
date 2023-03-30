@@ -24,7 +24,12 @@ make install
 cd .. && rm -rf SwiftyMocky
 ```
 
-4. Project generation
+4. Install cocoapods-developing-folder
+```
+gem install cocoapods-developing-folder
+```
+
+5. Project generation
 For the project generation run the following commond:
 ```
 ./Scripts/generate.sh ./Modules ./Scripts

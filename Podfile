@@ -1,6 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '15.0'
 
+plugin 'cocoapods-developing-folder'
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
@@ -11,6 +13,9 @@ post_install do |installer|
     config.build_settings['DEAD_CODE_STRIPPING'] = 'YES'
   end
 end
+
+local_pod_searching_root 'Modules'
+use_folders :skip_top_level_group => ['Modules']
 
 target 'BAndC' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -23,11 +28,11 @@ target 'BAndC' do
 
   # Local pods for BAndC
   # Common
-  pod 'Coordination', :path => 'Modules/Common/Coordination'
-  pod 'FoundationPlus', :path => 'Modules/Common/FoundationPlus'
-  pod 'UIPlus', :path => 'Modules/Common/UIPlus'
+  local_pod 'Coordination'
+  local_pod 'FoundationPlus'
+  local_pod 'UIPlus'
   # Screens
-  pod 'MainScreen', :path => 'Modules/Screens/Main', :testspecs => ['Tests']
+  local_pod 'MainScreen', :testspecs => ['Tests']
 
   abstract_target 'Tests' do
     target "BAndCTests"
